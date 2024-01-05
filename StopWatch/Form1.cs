@@ -50,6 +50,11 @@ namespace StopWatch
             ms = 0;
             label1.Text = "00:00:00:00";
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timer.Stop();
+            Close();
+        }
 
         private void OnTimeEvent(object? sender, ElapsedEventArgs e)
         {
@@ -80,15 +85,7 @@ namespace StopWatch
                     ms.ToString().PadLeft(2, '0'));
             }));
 
-            if (Console.KeyAvailable)
-            {
-                char key = Console.ReadKey(intercept: true).KeyChar;
-                if (key == 'a')
-                {
-                    timer.Stop();
-                    Application.Exit();
-                }
-            }
+
 
 
         }

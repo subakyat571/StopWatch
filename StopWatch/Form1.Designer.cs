@@ -32,6 +32,7 @@
             startBTN = new Button();
             stopBTN = new Button();
             resetBTN = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -88,12 +89,27 @@
             resetBTN.UseVisualStyleBackColor = false;
             resetBTN.Click += resetBTN_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.DarkOliveGreen;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe Print", 8.139131F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(344, 260);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 28);
+            button1.TabIndex = 4;
+            button1.Text = "CLOSE";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MidnightBlue;
             ClientSize = new Size(786, 300);
+            Controls.Add(button1);
             Controls.Add(resetBTN);
             Controls.Add(stopBTN);
             Controls.Add(startBTN);
@@ -113,5 +129,6 @@
         private Button startBTN;
         private Button stopBTN;
         private Button resetBTN;
+        private Button button1;
     }
 }
