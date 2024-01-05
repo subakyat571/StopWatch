@@ -50,9 +50,9 @@ namespace StopWatch
             ms = 0;
             label1.Text = "00:00:00:00";
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void exitBTN_Click(object sender, EventArgs e)
         {
-            
+
             Close();
         }
 

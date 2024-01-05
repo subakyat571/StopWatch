@@ -101,7 +101,7 @@
             exitBTN.TabIndex = 4;
             exitBTN.Text = "CLOSE";
             exitBTN.UseVisualStyleBackColor = false;
-            exitBTN.Click += button1_Click;
+            exitBTN.Click += exitBTN_Click;
             // 
             // Form1
             // 
